@@ -18,7 +18,7 @@ class BinaryHeap{
 
   bool removeHelper(int n){
     bool left = size > 2 * n + 1 && array[n] < array[2 * n + 1];
-    bool right = size > 2 * n + 1 && array[n] < array[2 * n + 1];
+    bool right = size > 2 * n + 2 && array[n] < array[2 * n + 2];
     return left || right;
   }
 
